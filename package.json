@@ -8,8 +8,9 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "node index.ts --mcp",
-    "dev": "fastmcp dev index.ts",
+    "start": "bun index.ts --mcp",
+    "dev": "bun --watch index.ts --mcp",
+    "dev2": "fastmcp dev index.ts",
     "inspect": "fastmcp inspect index.ts",
     "mcp-cli": "npx @wong2/mcp-cli -- node index.ts --mcp"
   },
